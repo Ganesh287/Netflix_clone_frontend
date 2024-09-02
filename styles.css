@@ -21,78 +21,94 @@ body,html {
     top: -2.5vw;
     z-index: 1000;
 }
-#lang{
+@media screen and (max-width:720px){
+    #logo{
+        width:36%;
+    }
+}
+.but{
     position: absolute;
-    top:3.8vh;
-    right:13vw;
-    padding-left: 20px;
-    width: 7.8%;
-    height: 4.5%;
+    top:4vh;
+    right:10vw;
+    width:15%;
+    height: 5%;
+    padding-left:1%;
+}
+@media screen and (max-width:720px){
+    .but{
+        width:25%;
+    }
+}
+#lang{
+    width: 50%;
+    height: 75%;
     color: white;
-    overflow: hidden;
     font-weight: bold;
     background: none;
+    font-size: 1.5vh;
     border:1px solid white;
     border-radius: 4px;   
+    
 }
 #sign{
     position: absolute;
-    top:3.8vh;
-    right:14vh;
-    width: 5.5%;
-    height: 4.5%;
+    width: 30%;
+    margin-left:1vh;
+    height: 73%;
     color: white;
     overflow: hidden;
+    font-size:1.5vh;
     font-weight: bold;
     background-color: red;
-    border:4px solid red;
+    border:1px solid red;
     border-radius: 4px;   
 }
 #t{
     position: absolute;
-    top:25%;
+    top:20%;
     right:23%;
     width:45%;
+    height:17%;
+    padding-bottom: 3vh;
     color: white;
     font-family: sans-serif;
-    font-size: 3.6vh;
-    font-weight: bold;    
+    font-size: 3.9vh;     
+}
+@media screen and (max-width:1180px){
+    #t{
+        width:45%;
+        height:15%;
+        font-size:2vh;
+    }
 }
 option{
     color:black;
 }
 #te{
-    position: absolute;
-    top:46%;
-    right:17%;
-    width:45%;
+    width:90%;
     color: white;
     font-family: sans-serif;
+    margin-left: 1.2vh;
     font-size: 2.6vh;
     font-weight: bold;     
 }
 #pe{
-    position: absolute;
-    top:54%;
-    right:11%;
-    width:57%;
+    width:90%;
     color: white;
     font-family: sans-serif;
     font-size: 2.2vh;      
 }
 .search{
-    position: absolute;
-    bottom:34.5%;
-    right:24%;
-    width: 46%;
-    height: 5%;
+    
+    width: 90%;
+    height: 35%;
 }
 .search input{
-    padding-left: 14px;;
+    padding-left: 14px;
 }
 #se{
     width:55%;
-    height:140%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.752) ;
     color: white;
     font-size: 2vh;
@@ -101,11 +117,13 @@ option{
     border-radius: 4px;
 }
 #se2{   
-    width:29%;
-    height: 150%;
+    position: absolute;
+    width:30%;
+    height: 32%;
+    margin-left:0.7vh;
     color: white;
     font-weight: bold;
-    font-size: 3vh;
+    font-size: 1.34vh;
     font-family: sans-serif;
     background-color: red;
     border:none;
@@ -114,6 +132,7 @@ option{
 .trend{
     margin-left: 10vw;
     margin-top:4vh;
+    width:50%;
     color: white;
     font-family: sans-serif;
 }
@@ -130,9 +149,12 @@ option{
 }
 .movies {
     display: flex;
+    flex-wrap: wrap;
+    width:80%;
     margin-left: 10vw;
+    margin-right: 1vw;;
     margin-top: 2vw;
-    gap: 8vh;
+    gap: 20px;
 }
 
 .image-container {
@@ -170,6 +192,7 @@ option{
     color:white;
     font-family: sans-serif;
     font-size:3.5vh;
+    width:70%;
     margin-left:10vw;
     margin-top:5vh;
 }
@@ -193,16 +216,35 @@ option{
 .box div p{
     color: grey;
 }
+@media screen and (max-width:1080px){
+    .box div h2{
+        padding-top:0.2vh;
+        font-size: 1.45vh;
+    }
+    .box div p{
+        font-size:1.5vh;
+    }
+    
+}
+@media screen and (max-width:720px) {
+    .box div p{
+        display:none;
+    }
+    .box div h2{
+        font-size: 2vh;
+    }
+}
 
 #freq{
     margin-left:10vw;
+    width:90%;
     color:white;
     font-size: 1.7em;
     font-family: sans-serif;
 }
 .ques{
     color:white;
-    width:80%;
+    width:75%;
     height:8vh;
     font-size: 3.6vh;
     font-family: sans-serif;
@@ -217,12 +259,17 @@ option{
 
 .searchEnd{
     margin-left:11vw;
+    margin-right: 15%;
+    width:90%;
     margin-top: 10vh;
+}
+.searchEnd p{
+    margin-right: 20%;
 }
 #seEnd{
     height: 7vh;
-    width:43%;
-    margin-left: 22vh;
+    width:40%;
+    margin-left:10%;
     background: rgba(0, 0, 0, 0.752) ;
     color: white;
     font-size: 2vh;
@@ -231,11 +278,13 @@ option{
     border-radius: 4px;
 }
 #se2End{   
+    position: absolute;
     height:7vh;
     width:18%;
+    margin-left: 1vh;
     color: white;
     font-weight: bold;
-    font-size: 3vh;
+    font-size: 2vh;
     font-family: sans-serif;
     background-color: red;
     border:none;
