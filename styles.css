@@ -230,9 +230,7 @@ option{
     .box div p{
         display:none;
     }
-    .box div h2{
-        font-size: 2vh;
-    }
+   
 }
 
 #freq{
@@ -300,7 +298,7 @@ option{
     margin-top: 5vh;
     margin-left: 10vw;
     display: flex;
-    gap:10vw;
+    gap:7vh;
 
 }
 .foot div p{
